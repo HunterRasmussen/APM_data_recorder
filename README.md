@@ -8,15 +8,16 @@ https://github.com/Adobe-CEP/Samples/tree/master/PProPanel
 
 
 
-#2
+# 2
 Download the zip file and place the contents in the appropriate directory
-MACOS: /Library/Application Support/Adobe/CEP/extensions
+
+MACOS /Library/Application Support/Adobe/CEP/extensions
 
 (Not sure on this)
 WiNDOWS: Program Files\Adobe\Adobe Premiere <version>\Support Files
   
   
-#3 
+# 3 
   
   
   
