@@ -2,11 +2,13 @@
 A plugin for Adobe Premiere to automate the logging of APM music tracks
 
 
-
+# 1
 Follow the steps here to enable 3rd part plugins for Adobe Premiere
 https://github.com/Adobe-CEP/Samples/tree/master/PProPanel
 
 
+
+#2
 Download the zip file and place the contents in the appropriate directory
 MACOS: /Library/Application Support/Adobe/CEP/extensions
 
@@ -14,7 +16,7 @@ MACOS: /Library/Application Support/Adobe/CEP/extensions
 WiNDOWS: Program Files\Adobe\Adobe Premiere <version>\Support Files
   
   
-  
+#3 
   
   
   
