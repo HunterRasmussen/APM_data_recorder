@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- This document forms the dockable panel. The button is the <input> tag below. The <style> formats the button.
+
+		The extendscript is called through the <script type="text/javascript"> tag, which then routes it to use the adobe_cep_.evalScript to interpret that Javascript into Extendscript -->
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Alert Panel</title>
+		<script src="./lib/CSInterface.js"></script>
+		<script type="text/javascript">
+
+			function runAll() {
+				var cs = new CSInterface;
+				var documentProductionType = document.getElementById("productionType");
+				//alert(documentProductionType.value);
+				cs.evalScript('$.runScript.getInfo("' + documentProductionType.value + '")');
+			}
+
+
+		</script>
+		<style>
+			body {
+				background-color: #262626;
+				color: #f5f5f5;
+				text-align: center;
+				}
+			input {
+				display: block;
+				margin: auto;
+				max-width: 100%;
+					}
+
+
+		</style>
+	</head>
+
+	<body>
+
+		<p>First make sure your project is saved as the name you want to see in the document <br/><br/>
+			Second, make sure your sequence starts at time 0 and the desired end point is the end of the last clip in your timeline. <br/><br/>
+			Third, select the type of production type your video will be. </p>
+
+			<select id = "productionType">
+		  	<option value="Internet">Internet</option>
+		  	<option value="Stadium/Arena">Stadium/Arena</option>
+		  	<option value="Internal">Internal</option>
+			</select>
+
+		<br/><br/>
+
+		<p>Fourth, click generate which will then prompt you to pick the file you want the info saved to. Make sure you choose a .txt file.  If you don't have one, open a text editor and create one</p>
+		<br/><br/>
+
+
+		<button id="runButton" type="run" onclick="runAll()">Generate</button>
+
+	</body>
+</html>
