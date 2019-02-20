@@ -1,4 +1,4 @@
-# APM_data_recorder
+# APM Music Premiere Pro plugin
 A plugin for Adobe Premiere to automate the logging of APM music tracks
 
 
